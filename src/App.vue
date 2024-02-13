@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="common-layout">
+        <el-container>
+            <el-header class="no-padding">
+                <nav-bar></nav-bar>
+            </el-header>
+            <el-main>
+                <router-view></router-view>
+            </el-main>
+        </el-container>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+    import { defineComponent } from 'vue';
+    import HomePage from './components/HomePage.vue'
+    import NavBar from './components/NavBar.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    export default defineComponent({
+        name: 'App',
+        components: {
+            HomePage,
+            NavBar
+        }
+    });
+
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+    .no-padding{
+        padding-left:0;
+        padding-right:0;
+    }
 </style>

@@ -1,0 +1,2 @@
+C:\Users\codyy\source\repos\SurverySay\vueapp\obj\Debug\vueapp.esproj.SuggestedBindingRedirects.cache
+C:\Users\codyy\source\repos\SurverySay\vueapp\obj\Debug\vueapp.esproj.CoreCompileInputs.cache
