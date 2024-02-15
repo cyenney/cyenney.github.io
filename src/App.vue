@@ -26,6 +26,10 @@
 
 </script>
 
+<style>
+    @import'~bootstrap/dist/css/bootstrap.css';
+</style>
+
 <style scoped>
     .no-padding{
         padding-left:0;

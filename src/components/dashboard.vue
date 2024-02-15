@@ -1,12 +1,15 @@
 <template>
-    <h2>{{id}}</h2>
-    <h2>dashboard</h2>
+    <side-bar />
 </template>
 <script>
     import { defineComponent } from 'vue';
     import axios from 'axios';
+    import SideBar from './sidebar.vue';
     export default defineComponent({
         name: "dashboard",
+        components: {
+            SideBar
+        },
         data() {
             return {
                 loading: false,

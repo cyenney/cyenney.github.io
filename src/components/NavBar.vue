@@ -3,8 +3,6 @@
     <el-menu :default-active="activeIndex2"
              class="el-menu-demo"
              mode="horizontal"
-             background-color="#FFA500"
-             text-color="#fff"
              active-text-color="#ffd04b"
              @select="handleSelect"
              style="justify-content:space-between">

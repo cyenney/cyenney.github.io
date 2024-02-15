@@ -6,6 +6,9 @@
     <el-row>
         <el-input class="input-field" v-model="password" placeholder="Please input" />
     </el-row>
+    <div v-if="notFound">
+        Incorrect email or password.
+    </div>
     <el-row>
         <el-button v-on:click="login" type="primary">Primary</el-button>
     </el-row>
@@ -19,7 +22,8 @@
         data() {
             return {
                 email:null,
-                password:null,
+                password: null,
+                notFound:false,
             };
         },
         created() {
@@ -40,11 +44,15 @@
                   })
                     .then(function (response) {
                         if (response.status == 200) {
-                            self.$router.push({ name: 'dashboard', params: { id: response.data } });
+                            self.notFound = false;
+                            self.$router.push({ name: 'Dashboard', params: { id: response.data } });
+                        } else {
+                            self.notFound = true;
                         }
                    
                   })
-                  .catch(function (error) {
+                    .catch(function (error) {
+                        self.notFound = true;
                     console.log(error);
                   });
 

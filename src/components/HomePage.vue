@@ -8,7 +8,6 @@
                     responsive, mobile-first projects on the web.
                 </p>
             </div>
-
         </div>
     </div>
     <el-row class="card-row">

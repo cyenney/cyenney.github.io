@@ -5,10 +5,10 @@ import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import router from './router'
 import axios from 'axios';
-
+import bootstrap from 'bootstrap';
 axios.defaults.baseURL = 'https://localhost:7135';
 
 
 const app = createApp(App);
-app.use(ElementPlus).use(router);
+app.use(ElementPlus).use(router).use(bootstrap);
 app.mount('#app')

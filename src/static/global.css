@@ -7,6 +7,12 @@
 }
 
 body {
-    /*background-color: aquamarine;
+    /* background-color: aquamarine;
     color: coral;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.75em;
+}
+
+text {
+    font-family: Arial, Helvetica, sans-serif;
 }
