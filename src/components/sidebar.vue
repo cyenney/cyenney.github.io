@@ -7,10 +7,13 @@
              @open="handleOpen"
              @close="handleClose">
         <h2 class="dashboard">Dashboard</h2>
-        <el-sub-menu index="1">
-            <template #title>
+        <el-menu-item tabindex="1">
+            <span>Dashboard</span>
+        </el-menu-item>
+        <!--<el-sub-menu index="1">
+            <template #title>-->
                 <!--<el-icon><location /></el-icon>-->
-                <span>Navigator One</span>
+                <!--<span>Navigator One</span>
             </template>
             <el-menu-item-group title="Group One">
                 <el-menu-item index="1-1">item one</el-menu-item>
@@ -25,18 +28,18 @@
                 </template>
                 <el-menu-item index="1-4-1">item one</el-menu-item>
             </el-sub-menu>
-        </el-sub-menu>
+        </el-sub-menu>-->
         <el-menu-item index="2">
             <!--<el-icon><icon-menu /></el-icon>-->
-            <span>Navigator Two</span>
+            <span>Create Survey</span>
         </el-menu-item>
         <el-menu-item index="3" disabled>
             <!--<el-icon><document /></el-icon>-->
-            <span>Navigator Three</span>
+            <span>Coupons</span>
         </el-menu-item>
         <el-menu-item index="4">
             <!--<el-icon><setting /></el-icon>-->
-            <span>Navigator Four</span>
+            <span>Profile</span>
         </el-menu-item>
     </el-menu>
 </template>
@@ -58,7 +61,7 @@
 
 <style>
     .side-bar {
-        width: 20%;
+        width: 100%;
         height:100vh;
         padding-top:5px;
         padding-left:5px;

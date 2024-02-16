@@ -13,6 +13,5 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="src\router\" />
-    <Folder Include="src\views\" />
   </ItemGroup>
 </Project>

@@ -45,7 +45,7 @@
                     .then(function (response) {
                         if (response.status == 200) {
                             self.notFound = false;
-                            self.$router.push({ name: 'Dashboard', params: { id: response.data } });
+                            self.$router.push({ name: 'HomePage', params: { id: response.data } });
                         } else {
                             self.notFound = true;
                         }

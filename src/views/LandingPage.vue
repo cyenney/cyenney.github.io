@@ -1,6 +1,6 @@
 <template>
     <div id="home">
-        <div class="container">
+        <el-row class="jumbotron-row">
             <div class="jumbotron">
                 <h1>Bootstrap Tutorial</h1>
                 <p>
@@ -8,7 +8,8 @@
                     responsive, mobile-first projects on the web.
                 </p>
             </div>
-        </div>
+        </el-row>
+       
     </div>
     <el-row class="card-row">
         <el-card class="box-card">
@@ -89,7 +90,16 @@
     });
 </script>
 
-<style>
+<style scoped>
+    .container {
+        width: 100%;
+        margin:0px;
+    }
+
+    .jumbotron-row {
+        width:100%;
+    }
+
     .jumbotron{
         background-color:gray;
         height:300px;
