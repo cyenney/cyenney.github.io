@@ -7,6 +7,8 @@ Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "vueapp", "vueapp\vueapp.esp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "webapi", "webapi\webapi.csproj", "{8CF2F0A7-8EE6-4652-87C5-9D4303347007}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MachineLearning", "MachineLearning\MachineLearning.csproj", "{633C3F1B-D93F-416B-A427-EFA7CFE45A1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{8CF2F0A7-8EE6-4652-87C5-9D4303347007}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CF2F0A7-8EE6-4652-87C5-9D4303347007}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CF2F0A7-8EE6-4652-87C5-9D4303347007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{633C3F1B-D93F-416B-A427-EFA7CFE45A1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{633C3F1B-D93F-416B-A427-EFA7CFE45A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{633C3F1B-D93F-416B-A427-EFA7CFE45A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{633C3F1B-D93F-416B-A427-EFA7CFE45A1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
