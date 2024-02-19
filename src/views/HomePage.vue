@@ -10,8 +10,11 @@
             <div v-else-if="selected === 'profile'">
                 profile
             </div>
-            <div v-else-if="selected === 'survey'">
+            <div v-else-if="selected === 'surveys'">
                 <survey/>
+            </div>
+            <div v-else-if="selected === 'comments'">
+                <comments/>
             </div>
         </el-col>
     </el-row>
@@ -24,12 +27,14 @@
     import SideBar from '../components/sidebar.vue';
     import Dashboard from "../components/dashboard.vue"
     import Survey from "../components/survey.vue";
+    import Comments from "../components/comments.vue";
     export default defineComponent({
         name: "home-page",
         components: {
             SideBar,
             Dashboard,
-            Survey
+            Survey,
+            Comments
         },
         data() {
             return {

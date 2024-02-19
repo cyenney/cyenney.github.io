@@ -10,8 +10,11 @@
         <el-menu-item @click="$emit('input', 'dashboard')" index="1">
             <span>Dashboard</span>
         </el-menu-item>
-        <el-menu-item @click="$emit('input', 'survey')" index="2">
-            <span>Survey</span>
+        <el-menu-item @click="$emit('input', 'surveys')" index="2">
+            <span>Surveys</span>
+        </el-menu-item>
+        <el-menu-item @click="$emit('input', 'comments')" index="2">
+            <span>Comments</span>
         </el-menu-item>
         <el-menu-item @click="$emit('input', 'coupons')" index="3">
             <span>Coupons</span>
