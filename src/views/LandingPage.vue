@@ -1,13 +1,16 @@
 <template>
     <div id="home">
         <el-row class="jumbotron-row">
-            <div class="jumbotron">
-                <h1>Bootstrap Tutorial</h1>
-                <p>
-                    Bootstrap is the most popular HTML, CSS, and JS framework for developing
-                    responsive, mobile-first projects on the web.
-                </p>
-            </div>
+            <el-col :span="10">
+                <div class="centered-text">
+                    <h2>SurveySays!</h2>
+                    <div>Gather customer feedback and gain actionable insights on how to improve your business!</div>
+                </div>
+            </el-col>
+            <el-col :span="14">
+                <img src="../assets/surevey-pic.png" />
+            </el-col>
+            
         </el-row>
        
     </div>
@@ -91,6 +94,11 @@
 </script>
 
 <style scoped>
+
+    .centered-text {
+        text-align:center;
+        padding-top:10%;
+    }
     .container {
         width: 100%;
         margin:0px;

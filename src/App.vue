@@ -16,6 +16,7 @@
     import HomePage from './views/HomePage.vue'
     import NavBar from './components/NavBar.vue'
 
+
     export default defineComponent({
         name: 'App',
         components: {

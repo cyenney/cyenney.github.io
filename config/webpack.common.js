@@ -9,7 +9,8 @@ const __src = path.resolve(__base, 'src');
 module.exports = {
     //Entry: main file that init our application
     entry: path.resolve(__src, 'main.js'),
-
+    debug:true,
+    devtool: 'inline-source-map',
     //Output: result of the bundle after webpack run
     output: {
         filename: '[name].bundle.js',

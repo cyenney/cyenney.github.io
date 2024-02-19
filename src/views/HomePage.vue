@@ -1,14 +1,17 @@
 <template>
     <el-row>
         <el-col :span="4">
-            <side-bar />
+            <side-bar @input="selectMenu" />
         </el-col>
         <el-col :span="20">
             <div v-if="selected === 'dashboard'">
                 <dashboard/>
             </div>
-            <div v-else>
-                another page
+            <div v-else-if="selected === 'profile'">
+                profile
+            </div>
+            <div v-else-if="selected === 'survey'">
+                <survey/>
             </div>
         </el-col>
     </el-row>
@@ -20,11 +23,13 @@
     import axios from 'axios';
     import SideBar from '../components/sidebar.vue';
     import Dashboard from "../components/dashboard.vue"
+    import Survey from "../components/survey.vue";
     export default defineComponent({
         name: "home-page",
         components: {
             SideBar,
-            Dashboard
+            Dashboard,
+            Survey
         },
         data() {
             return {
@@ -53,6 +58,11 @@
         methods: {
             login() {
                 this.$router.push({ name: 'LogIn' })
+            },
+            selectMenu(selection){
+
+                console.log("test");
+                this.selected = selection;
             },
             getCustomerDashboard() {
 

@@ -16,3 +16,7 @@ body {
 text {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.container {
+    padding: 5px;
+}
