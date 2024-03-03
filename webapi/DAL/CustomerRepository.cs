@@ -1,4 +1,4 @@
-﻿using webapi.Models.Customer;
+﻿using webapi.Models;
 
 namespace webapi.DAL
 {

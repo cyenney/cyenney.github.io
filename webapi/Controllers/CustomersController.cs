@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using webapi.DAL;
-using webapi.Models.Customer;
+using webapi.Models;
 
 namespace webapi.Controllers;
 
@@ -16,7 +16,7 @@ public class CustomersController : ControllerBase
 
     [HttpPost("register")]
     public ActionResult RegisterCustomer()
-    {//
+    {
         return Ok();
     }
 
